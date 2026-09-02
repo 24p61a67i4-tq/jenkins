@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     stages {
-
         stage('Checkout') {
             steps {
                 checkout scm
@@ -11,15 +10,8 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Build completed'
+                bat 'python main.py'
             }
         }
-
-        stage('Test') {
-            steps {
-                echo 'Test completed'
-            }
-        }
-
     }
 }
