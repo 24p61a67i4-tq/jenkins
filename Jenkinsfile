@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'python main.py'
+                bat '"C:\\Users\\vaibh\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" main.py'
             }
         }
     }
